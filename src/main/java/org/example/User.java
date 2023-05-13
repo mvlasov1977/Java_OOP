@@ -83,7 +83,7 @@ public class User {
 
     // створрюю методи класу
     public void makePurchase(double purchasePrice){
-        System.out.println(this.userName + " придбав на: " + purchasePrice + " грн.");
+        System.out.println(userName + " придбав на: " + purchasePrice + " грн.");
         amountSpentMoney = amountSpentMoney + purchasePrice;
     }
 
