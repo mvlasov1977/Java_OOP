@@ -1,18 +1,24 @@
+package org.example;
+
 public class User {
+
     private int age;
     private String password;
 
     public String userName;
     public String email;
     public boolean isActive;
-    public double amountSpentMoney;
 
+    // створюю глобальну змінну классу
+    public static double amountSpentMoney;
+
+    // Створюю конструктори
     public User(){
         age = 0;
         password = "";
-        userName = "";
-        email = "";
-        isActive = false;
+        userName = "NULL";
+        email = "-";
+        isActive = false; // Не заданий username
         amountSpentMoney = 0;
     }
 
@@ -34,6 +40,7 @@ public class User {
         amountSpentMoney = 0;
     }
 
+    // створюю get / set методи
     public int getAge(){
         return age;
     }
@@ -57,17 +64,18 @@ public class User {
 
     public void setPassword(String myPassword){
         if (myPassword.length() > 10) {
-            myPassword = myPassword.substring(1, 10);
+            myPassword = myPassword.substring(0, 10);
         }
         password = myPassword;
     }
 
+    // створрюю методи класу
     public void makePurchase(double purchasePrice){
-        System.out.println("Покупка на: " + purchasePrice + " грн.");
+        System.out.println(this.userName + " придбав на: " + purchasePrice + " грн.");
         amountSpentMoney = amountSpentMoney + purchasePrice;
     }
 
-    public void printTotalAmountOfSpentMoney(){
-        System.out.println("Всього витрачено : " + amountSpentMoney + " грн.");
+    public static void printTotalAmountOfSpentMoney(){
+        System.out.println("Всього витрачено: " + amountSpentMoney + " грн.\n");
     }
 }
