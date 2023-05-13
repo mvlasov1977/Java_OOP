@@ -42,10 +42,10 @@ public class User {
         if ( (myAge > 0) && (myAge < 150) ) {
             age = myAge;
         }else{
-            if myAge < 0 {
+            if (myAge < 0) {
                 age = 0;
             }
-            if myAge > 150 {
+            if (myAge > 150) {
                 age = 150;
             }
         }
@@ -56,7 +56,7 @@ public class User {
     }
 
     public void setPassword(String myPassword){
-        if myPassword.length() > 10{
+        if (myPassword.length() > 10) {
             myPassword = myPassword.substring(1, 10);
         }
         password = myPassword;
