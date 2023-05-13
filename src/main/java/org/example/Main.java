@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //створюю користувачів
-        User arrayOfUsers [] = new User [4];
+        User[] arrayOfUsers = new User [4];
 
         arrayOfUsers[0] = new User();
          arrayOfUsers[0].email = "anonymous@gmail.com";
