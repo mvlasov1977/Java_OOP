@@ -31,7 +31,7 @@ public class Main {
         arrayOfUsers[1].makePurchase(550);
         arrayOfUsers[2].makePurchase(500);
         arrayOfUsers[3].makePurchase(123);
-        System.out.println("");
+        System.out.print("\n");
 
         // виводжу інфо про користувачів
         for (User myUser:arrayOfUsers) {
@@ -40,8 +40,17 @@ public class Main {
             System.out.println("Password: " + myUser.getPassword());
             System.out.println("Age:      " + myUser.getAge());
             System.out.println("Status:   " + myUser.isActive);
-            System.out.println("");
+            System.out.print("\n");
         }
         User.printTotalAmountOfSpentMoney();
+
+        // CALCULATOR завдання номер -2-
+        double myFirstOperand = 3;
+        double mySecondOperand = 3;
+
+        System.out.println(myFirstOperand + " + " + mySecondOperand + " = " + Calculator.addition( myFirstOperand, mySecondOperand));
+        System.out.println(myFirstOperand + " - " + mySecondOperand + " = " + Calculator.substraction( myFirstOperand, mySecondOperand));
+        System.out.println(myFirstOperand + " * " + mySecondOperand + " = " + Calculator.multiplication( myFirstOperand, mySecondOperand));
+        System.out.println(myFirstOperand + " / " + mySecondOperand + " = " + Calculator.division( myFirstOperand, mySecondOperand));
     }
 }

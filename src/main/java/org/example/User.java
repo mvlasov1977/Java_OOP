@@ -1,5 +1,17 @@
 package org.example;
+/*
+Створити клас User, у якого будуть:
+ - поля userName, age, email, password, isActive(boolean), amountSpentMoney.
+   password та age повинні мати модифікатор доступу private.
+   Зробити геттери і сеттери з валідацією для private полів(валідація довільна).
 
+ - методи: makePurchase, який приймає параметр purchasePrice(вартість покупки) типу double,
+   і виводить на яку суму була здійснена покупка та додає цю вартість до глобальної змінної amountSpentMoney.
+
+ printTotalAmountOfSpentMoney, який виводить загальну суму витрачених грошей.
+
+  -конструктори: дефолтний; конструктор який приймає userName та контруктор який приймає userName та password.
+ */
 public class User {
 
     private int age;
