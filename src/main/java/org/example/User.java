@@ -87,6 +87,10 @@ public class User {
         amountSpentMoney = amountSpentMoney + purchasePrice;
     }
 
+    public double addDiscount(int percent){
+        return (amountSpentMoney * percent / 100 );
+    }
+
     public static void printTotalAmountOfSpentMoney(){
         System.out.println("Всього витрачено: " + amountSpentMoney + " грн.\n");
     }
