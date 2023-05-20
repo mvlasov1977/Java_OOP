@@ -13,7 +13,7 @@ package org.example;
   -конструктори: дефолтний; конструктор який приймає userName та контруктор який приймає userName та password.
  */
 public class User {
-    public String forDeleteValue;//
+    public String myValue; // temporary
 
     private int age;
     private String password;
