@@ -14,11 +14,6 @@ package org.example;
  */
 public class User {
 
-    public String myValue; // temporary
-
-    public String forDeleteValue; // value for revert operation in git
-
-
     private int age;
     private String password;
 
